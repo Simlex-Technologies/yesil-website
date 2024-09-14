@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.scss";
 import Layout from "./components/Layout";
+import { customMetaDataGenerator } from "./lib/customMetaDataGenerator";
 
 const plusJakartaSans = localFont({
     src: "./fonts/PlusJakartaSans.ttf",
@@ -14,10 +15,13 @@ const plusJakartaSansItalic = localFont({
     weight: "100 900",
 });
 
-export const metadata: Metadata = {
-    title: "Versil Services",
-    description: "Seamless HR Solutions and Logistics Excellence",
-};
+// Define Metadata for the general site layout
+// We're relying on the default parameters defined in the function, 
+// That's why we're only passing `title` in the object
+export const metadata: Metadata = customMetaDataGenerator({
+    title: 'Versil Services',
+    description: 'Seamless HR Solutions and Logistics Excellence',
+});
 
 export default function RootLayout({
     children,
