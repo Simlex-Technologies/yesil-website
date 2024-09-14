@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: "https://www.versilservices.com",
+  siteUrl: "https://www.yersilservices.com",
   generateRobotsTxt: true,
 };

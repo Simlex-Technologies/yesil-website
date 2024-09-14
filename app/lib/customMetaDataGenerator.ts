@@ -13,20 +13,20 @@ interface PageSEOProps {
 export function customMetaDataGenerator({
   title,
   description = "Seamless HR Solutions and Logistics Excellence",
-  canonicalUrl = "https://versilservices.com/",
+  canonicalUrl = "https://yersilservices.com/",
   ogType = "website",
   keywords = [
     "Business Optimization",
-    "Versil Services",
+    "Yersil Services",
     "Customer Experience",
-    "Versil Services",
+    "Yersil Services",
     "HR Solutions",
     "Logistics Excellence",
   ],
   ogImage = "",
   twitterCard = "summary_large_image",
 }: PageSEOProps): Metadata {
-  const siteTitle = "Versil Services Website";
+  const siteTitle = "Yersil Services Website";
   const fullTitle = `${title} | ${siteTitle}`;
 
   return {

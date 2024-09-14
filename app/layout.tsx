@@ -19,7 +19,7 @@ const plusJakartaSansItalic = localFont({
 // We're relying on the default parameters defined in the function, 
 // That's why we're only passing `title` in the object
 export const metadata: Metadata = customMetaDataGenerator({
-    title: 'Versil Services',
+    title: 'Yersil Services',
     description: 'Seamless HR Solutions and Logistics Excellence',
 });
 
