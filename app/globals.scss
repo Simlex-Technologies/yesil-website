@@ -20,4 +20,13 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .section {
+    @apply px-4 md:px-6;
+  }
+  .hide-scrollbar {
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
