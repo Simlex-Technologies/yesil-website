@@ -10,7 +10,7 @@ interface FooterProps {
 
 const Footer: FunctionComponent<FooterProps> = (): ReactElement => {
     return (
-        <footer className="section flex flex-col justify-center items-start gap-8 bg-sky-blue py-10 pb-20">
+        <footer className="section flex flex-col justify-center items-start gap-8 bg-sky-blue py-10 pb-20 font-[family-name:var(--font-plus-jakarta-sans)]">
             <div className="flex flex-col items-start justify-center gap-0">
                 <div className="w-52 h-20 relative">
                     <CustomImage src={images.logo_full_white} alt="logo" className="object-contain" />
