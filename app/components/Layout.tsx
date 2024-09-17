@@ -1,6 +1,6 @@
 import { FunctionComponent, ReactElement } from "react";
-import Navbar from "./shared/navbar";
-import Footer from "./shared/footer";
+import Navbar from "./shared/Navbar";
+import Footer from "./shared/Footer";
 
 interface LayoutProps {
     children: React.ReactNode;

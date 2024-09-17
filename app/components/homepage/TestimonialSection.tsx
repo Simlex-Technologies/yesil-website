@@ -91,13 +91,13 @@ const TestimonialSection: FunctionComponent<TestimonialSectionProps> = (): React
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
-                    className="text-2xl font-bold text-white"
+                    className="text-2xl font-bold text-white md:font-normal"
                 >
-                    Hear Directly from Our Happy Clients: Real Results, Real Impact
+                    Hear Directly from Our Happy Clients: <br className="hidden md:block" /> <span className="md:font-bold">Real Results, Real Impact</span>
                 </motion.h2>
             </div>
             <div className="flex flex-col items-center gap-4 w-[90%]">
-                <div ref={testimonialCarouselRef} className="flex flex-row items-center gap-4 overflow-x-auto flex-nowrap snap-mandatory snap-x w-full hide-scrollbar transition-all duration-300">
+                <div ref={testimonialCarouselRef} className="flex flex-row items-center gap-4 overflow-x-auto flex-nowrap snap-mandatory snap-x w-full hide-scrollbar transition-all duration-300 lg:justify-center">
                     {
                         testimonies.map((testimonial, index) => (
                             <div key={index} className="bg-white p-5 shadow-md flex flex-col items-center justify-center gap-2 text-center w-[300px] min-w-[300px] max-w-[300px] snap-center">

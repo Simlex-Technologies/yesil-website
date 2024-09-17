@@ -36,9 +36,9 @@ const ServiceSection: FunctionComponent<ServiceSectionProps> = (): ReactElement 
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
-                    className="text-2xl font-bold mb-5"
+                    className="text-2xl font-bold mb-5 md:font-normal"
                 >
-                    The HR & Logistics Service Your Business Needs to Unlock Growth
+                    The HR & Logistics Service Your Business Needs <br className="hidden md:block" /> <span className="md:font-bold">to Unlock Growth</span>
                 </motion.h2>
 
                 <motion.p
@@ -51,7 +51,7 @@ const ServiceSection: FunctionComponent<ServiceSectionProps> = (): ReactElement 
                     Unlock your business’s full potential with our comprehensive HR and logistics services, designed to drive growth, enhance efficiency, and support your long-term success.
                 </motion.p>
             </div>
-            <div className="flex flex-col items-center justify-center gap-6">
+            <div className="flex flex-col items-center justify-center gap-6 lg:flex-row">
                 {
                     services.map((service, index) => {
                         const bgColor = index % 2 === 0 ? "bg-primary-light" : "bg-secondary-light";

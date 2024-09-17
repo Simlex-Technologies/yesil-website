@@ -5,7 +5,7 @@ interface IconProps extends React.HTMLAttributes<SVGElement> {
 export const Icons = {
     Hamburger: (props: IconProps) => (
         <svg {...props} width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.125 13.375H16.875M1.125 7.375H16.875M1.125 1.375H16.875" stroke="#C59945" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M1.125 13.375H16.875M1.125 7.375H16.875M1.125 1.375H16.875" stroke="#C59945" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
     ),
     Google: (props: IconProps) => (
@@ -64,7 +64,7 @@ export const Icons = {
     ),
     Location: (props: IconProps) => (
         <svg {...props} width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_63_282)">
+            <g clipPath="url(#clip0_63_282)">
                 <path d="M9 0C5.25 0 2.25 3 2.25 6.75C2.25 11.4 4.8 15.525 8.625 17.925C8.85 18.075 9.15 18.075 9.45 17.925C13.2 15.45 15.75 11.4 15.75 6.75C15.75 3 12.75 0 9 0ZM9 9.75C7.35 9.75 6 8.4 6 6.75C6 5.1 7.35 3.75 9 3.75C10.65 3.75 12 5.1 12 6.75C12 8.4 10.65 9.75 9 9.75Z" fill="white" />
             </g>
             <defs>
@@ -147,12 +147,12 @@ export const Icons = {
     ),
     ChevronDown: (props: IconProps) => (
         <svg {...props} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19.9201 8.95L13.4001 15.47C13.0101 15.86 12.5001 16.08 11.9901 16.08C11.4801 16.08 10.9701 15.86 10.5801 15.47L4.06006 8.95" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M19.9201 8.95L13.4001 15.47C13.0101 15.86 12.5001 16.08 11.9901 16.08C11.4801 16.08 10.9701 15.86 10.5801 15.47L4.06006 8.95" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
     ),
     ChevronUp: (props: IconProps) => (
         <svg {...props} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.08008 15.05L10.6001 8.53C10.9901 8.14 11.5001 7.92 12.0101 7.92C12.5201 7.92 13.0301 8.14 13.4201 8.53L19.9401 15.05" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M4.08008 15.05L10.6001 8.53C10.9901 8.14 11.5001 7.92 12.0101 7.92C12.5201 7.92 13.0301 8.14 13.4201 8.53L19.9401 15.05" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
     ),
 };

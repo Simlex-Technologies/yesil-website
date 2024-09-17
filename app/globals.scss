@@ -21,8 +21,11 @@ body {
     text-wrap: balance;
   }
   .section {
-    @apply px-4 md:px-6;
+    @apply px-4 md:px-32;
   }
+  .link {
+    @apply bg-secondary text-white relative overflow-hidden font-medium py-2 md:py-3 px-6 text-base rounded-full rounded-bl-none hover:bg-primary-foreground hover:text-secondary transition-all duration-300;
+}
   .hide-scrollbar {
     scrollbar-width: none;
     &::-webkit-scrollbar {

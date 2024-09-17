@@ -12,7 +12,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         return (
             <button
                 type={type} 
-                className={`bg-secondary text-white relative overflow-hidden font-medium ${minBtn ? "py-2 px-4 text-xs" : "py-2 px-6 text-base"} rounded-full rounded-bl-none hover:bg-primary-foreground hover:text-secondary transition-all duration-300 ${className}`}
+                className={`bg-secondary text-white relative overflow-hidden font-medium ${minBtn ? "py-2 px-4 text-xs" : "py-2 md:py-3 px-6 text-base"} rounded-full rounded-bl-none hover:bg-primary-foreground hover:text-secondary transition-all duration-300 ${className}`}
                 ref={ref}
                 {...props}
             >

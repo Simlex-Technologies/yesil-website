@@ -6,7 +6,7 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
     ({ className, placeholder, ...props }, ref) => {
         return (
             <textarea
-                className={`w-full min-h-28 rounded-md border-gray-200 outline-none pe-10 shadow-sm sm:text-sm ${className}`}
+                className={`w-full h-32 resize-none p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-app-green/20 ${className}`}
                 placeholder={placeholder}
                 ref={ref}
                 {...props}
