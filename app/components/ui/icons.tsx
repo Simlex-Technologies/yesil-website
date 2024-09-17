@@ -144,5 +144,15 @@ export const Icons = {
                 </clipPath>
             </defs>
         </svg>
-    )
+    ),
+    ChevronDown: (props: IconProps) => (
+        <svg {...props} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.9201 8.95L13.4001 15.47C13.0101 15.86 12.5001 16.08 11.9901 16.08C11.4801 16.08 10.9701 15.86 10.5801 15.47L4.06006 8.95" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    ),
+    ChevronUp: (props: IconProps) => (
+        <svg {...props} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.08008 15.05L10.6001 8.53C10.9901 8.14 11.5001 7.92 12.0101 7.92C12.5201 7.92 13.0301 8.14 13.4201 8.53L19.9401 15.05" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    ),
 };
