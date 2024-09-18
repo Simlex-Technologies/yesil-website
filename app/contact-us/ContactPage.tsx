@@ -1,3 +1,5 @@
+"use client";
+	
 import Link from "next/link";
 import { FunctionComponent, ReactElement, useState } from "react";
 import Input from "../components/ui/input";
