@@ -1,10 +1,11 @@
 "use client";
 
 import { FunctionComponent, ReactElement } from "react";
-import Button from "../ui/button";
+import Button, { LinkButton } from "../ui/button";
 import CustomImage from "../ui/image";
 import images from "@/public/images";
 import { motion } from "framer-motion";
+import { ApplicationRoutes } from "@/app/constants/applicationRoutes";
 
 interface HeroSectionProps {
 
@@ -22,9 +23,9 @@ const HeroSection: FunctionComponent<HeroSectionProps> = (): ReactElement => {
                 >
                     Seamless HR <br className="hidden md:block" /> Solutions and Logistics Excellence
                 </motion.h1>
-                <Button>
+                <LinkButton url={ApplicationRoutes.Contact}>
                     Get Started
-                </Button>
+                </LinkButton>
             </div>
             <motion.div
                 initial={{ opacity: 0, scale: 0.85 }}

@@ -16,7 +16,7 @@ interface InfoSectionProps {
 const InfoSection: FunctionComponent<InfoSectionProps> = ({ title, description, image, ltr = false }): ReactElement => {
     return (
         <section className="section flex flex-col items-center justify-center gap-14 bg-white py-10">
-            <div className={`flex flex-col lg:flex-row ${ltr ? "!flex-row-reverse" : ""} lg:justify-between lg:w-full lg:items-center`}>
+            <div className={`flex flex-col lg:flex-row ${ltr ? "md:!flex-row-reverse" : ""} lg:justify-between lg:w-full lg:items-center`}>
                 <div className="flex flex-col items-center justify-center lg:items-start lg:justify-start lg:w-1/2">
                     <motion.h2
                         initial={{ opacity: 0, y: 10 }}
