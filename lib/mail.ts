@@ -71,16 +71,16 @@ export async function sendMail({
   }
 }
 
-export function compileNewsletterSubscriptionTemplate(email: string) {
-  const template = handlebars.compile(newsletterSubscriptionTemplate);
-  const htmlBody = template({ email });
+// export function compileNewsletterSubscriptionTemplate(email: string) {
+//   const template = handlebars.compile(newsletterSubscriptionTemplate);
+//   const htmlBody = template({ email });
 
-  return htmlBody;
-}
+//   return htmlBody;
+// }
 
-export function compileAccountCreationTemplate(name: string) {
-  const template = handlebars.compile(accountCreationTemplate);
-  const htmlBody = template({ name });
+// export function compileAccountCreationTemplate(name: string) {
+//   const template = handlebars.compile(accountCreationTemplate);
+//   const htmlBody = template({ name });
 
-  return htmlBody;
-}
+//   return htmlBody;
+// }
