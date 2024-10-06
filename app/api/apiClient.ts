@@ -3,7 +3,7 @@ import { ApiRoutes } from "./apiRoutes";
 import { CustomerEnquiry } from "../models/ICustomerEnquiries";
 
 export const API = axios.create({
-  baseURL: ApiRoutes.BASE_URL_TEST,
+  baseURL: ApiRoutes.BASE_URL_DEV,
 });
 
 

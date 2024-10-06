@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 import * as handlebars from "handlebars";
-import { accountCreationTemplate } from "./templates/accountCreation";
-import { verifyEmailTemplate } from "./templates/verifyAccount";
+import { customerTemplate } from "./templates/customerTemplate";
+import { teamTemplate } from "./templates/teamTemplate";
 
 type Mail = {
   to: string;
@@ -9,7 +9,7 @@ type Mail = {
   subject: string;
   body: string;
   bcc?: string;
-  attachments?: { filename: string; content: Buffer | string; }[];
+  attachments?: { filename: string; content: Buffer | string }[];
 };
 
 export async function sendMail({
@@ -71,16 +71,28 @@ export async function sendMail({
   }
 }
 
-// export function compileNewsletterSubscriptionTemplate(email: string) {
-//   const template = handlebars.compile(newsletterSubscriptionTemplate);
-//   const htmlBody = template({ email });
+export function compileCustomerTemplate(customerName: string) {
+  const template = handlebars.compile(customerTemplate);
+  const htmlBody = template({ customerName });
 
-//   return htmlBody;
-// }
+  return htmlBody;
+}
 
-// export function compileAccountCreationTemplate(name: string) {
-//   const template = handlebars.compile(accountCreationTemplate);
-//   const htmlBody = template({ name });
+interface CompileTeamTemplateProps {
+  firstName: string;
+  lastName: string;
+  email: string;
+  message: string;
+}
 
-//   return htmlBody;
-// }
+export function compileTeamTemplate(data: CompileTeamTemplateProps) {
+  const template = handlebars.compile(teamTemplate);
+  const htmlBody = template({ 
+    email: data.email,
+    firstName: data.firstName,
+    lastName: data.lastName,
+    message: data.message
+});
+
+  return htmlBody;
+}

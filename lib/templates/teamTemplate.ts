@@ -1,4 +1,4 @@
-export const verifyEmailTemplate = `
+export const teamTemplate = `
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en" style="font-family:arial, 'helvetica neue', helvetica, sans-serif">
  <head>
@@ -7,7 +7,7 @@ export const verifyEmailTemplate = `
   <meta name="x-apple-disable-message-reformatting">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta content="telephone=no" name="format-detection">
-  <title>Verify account</title><!--[if (mso 16)]>
+  <title>Someone filled the contact form</title><!--[if (mso 16)]>
     <style type="text/css">
     a {text-decoration: none;}
     </style>
@@ -49,8 +49,8 @@ a[x-apple-data-detectors] {
 @media screen and (max-width:384px) {.mail-message-content { width:414px!important } }
 </style>
  </head>
- <body style="width:100%;font-family:arial, 'helvetica neue', helvetica, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0">
-  <div dir="ltr" class="es-wrapper-color" lang="en" style="background-color:#B78AF7; padding: 24px 0;"><!--[if gte mso 9]>
+ <body style="width:100%; font-family:arial, 'helvetica neue', helvetica, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0">
+  <div dir="ltr" class="es-wrapper-color" lang="en" style="background-color:#CCD7DE; padding: 24px 0;"><!--[if gte mso 9]>
 			<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
 				<v:fill type="tile" color="#B78AF7" origin="0.5, 0" position="0.5, 0"></v:fill>
 			</v:background>
@@ -58,89 +58,45 @@ a[x-apple-data-detectors] {
    <table class="es-wrapper" width="100%" cellspacing="0" cellpadding="0" role="none" style="max-width:600px;margin: 0 auto; mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;padding:0;width:100%;height:100%;background-repeat:repeat;background-position:center top;background-color:#B78AF7">
      <tr>
       <td valign="top" style="padding:0;Margin:0">
-       <table cellpadding="0" cellspacing="0" class="es-header" align="center" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;background-color:transparent;background-repeat:repeat;background-position:center top">
-         <tr>
-          <td align="center" style="padding:0;Margin:0">
-           <table bgcolor="#ffffff" class="es-header-body" align="center" cellpadding="0" cellspacing="0" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:600px">
-             <tr>
-              <td align="left" style="padding:20px;Margin:0">
-               <table cellpadding="0" cellspacing="0" width="100%" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                 <tr>
-                  <td class="es-m-p0r" valign="top" align="center" style="padding:0;Margin:0;width:560px">
-                   <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                     <tr>
-                      <td align="left" class="es-m-txt-c" style="padding:0;Margin:0;font-size:0px">
-                      <a target="_blank" href="https://events.ticketsdeck.com" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:none;color:#3B8026;font-size:14px">
-                      <img src="https://res.cloudinary.com/dvxqk1487/image/upload/v1723533838/logo/etd-logo_gq8p9t.png" alt="Logo" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" title="Logo" width="40" height="40">
-                  </a>
-                    </td>
-                     </tr>
-                   </table></td>
-                 </tr>
-               </table></td>
-             </tr>
-           </table></td>
-         </tr>
-       </table>
+        <table style="width: 100%;background-color:#02395C;">
+            <tr>
+                <td style="padding: 12px;">
+                <img class="adapt-img" src="https://res.cloudinary.com/dnrczexeg/image/upload/v1728205874/yesil/oj9taibsllvyegejcteu.png" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="230" height="60">
+            </td>
+        </tr>
+        </table>
        <table class="es-content" cellspacing="0" cellpadding="0" align="center" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">
          <tr>
           <td align="center" style="padding:0;Margin:0">
            <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#ffffff;width:600px" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center" role="none">
+             
              <tr>
-              <td align="left" style="padding:40px;Margin:0">
-               <table cellpadding="0" cellspacing="0" width="100%" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                 <tr>
-                  <td align="center" valign="top" style="padding:0;Margin:0;width:520px">
-                   <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#1D0D35" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separate;border-spacing:0px;background-color:#1d0d35;border-radius:20px" role="presentation">
-                     <tr>
-                      <td align="center" style="Margin:0;padding-bottom:10px;padding-left:20px;padding-right:20px;padding-top:30px">
-                        <h1 style="Margin:0;line-height:48px;mso-line-height-rule:exactly;font-family:'Josefin Sans', helvetica, arial, sans-serif;font-size:40px;font-style:normal;font-weight:normal;color:#ffffff">
-                            Verify your account
-                    </h1>
-                    </td>
-                     </tr>
-                     <tr>
-                      <td align="center" style="padding:0;Margin:0;padding-bottom:30px">
-                        <!-- <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Josefin Sans', helvetica, arial, sans-serif;line-height:24px;color:#efefef;font-size:16px">
-                            Click the button below to verify your account.
-                    </p> -->
-                </td>
-                     </tr>
-                   </table></td>
-                 </tr>
-               </table></td>
-             </tr>
-             <tr>
-              <td align="left" style="padding:0;Margin:0;padding-bottom:40px;padding-left:40px;padding-right:40px">
+              <td align="left" style="padding:0;padding-top: 20px; Margin:0;padding-bottom:40px;padding-left:40px;padding-right:40px">
                <table cellpadding="0" cellspacing="0" width="100%" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                  <tr>
                   <td align="center" valign="top" style="padding:0;Margin:0;width:520px">
                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                      <tr>
                       <td align="left" style="padding:0;Margin:0;padding-top:5px;padding-bottom:5px">
-                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Josefin Sans', helvetica, arial, sans-serif;line-height:21px;color:#38363A;font-size:14px">
-                            Hi there, <br><br>
-                            We are thrilled to have you on board! Your account is almost ready. To complete the process, we just need to verify your email address <a href="mailto:{{userEmail}}">{{userEmail}}</a>. 
-                            <br><br>
-                            Click the button below to verify your account. The link can only be used once and will expire in <b>10 minutes</b> if not used.
-                            <br><br><br>
+                        <p style="Margin:0;margin-bottom: 25px; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Josefin Sans', helvetica, arial, sans-serif;line-height:21px;color:#38363A;font-size:16px">
+                            Dear Team, <br><br>
+                            Great news! A customer just filled the contact form. See below the details of the inquiry. 
+                            <br>
                         </p>
+                        <p style="color: #02395C; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Josefin Sans', helvetica, arial, sans-serif;line-height:21px;font-size:18px">
+                            Here are the details of the customer:
+                        </p>
+                        <ul style="padding-left: 15px; gap: 8px; font-family:'Josefin Sans', helvetica, arial, sans-serif;">
+                        <li style="padding-bottom: 10px;">First Name: {{firstName}}</li>
+                        <li style="padding-bottom: 10px;">Last Name: {{lastName}}</li>
+                        <li style="padding-bottom: 10px;">Email Address: {{email}}</li>
+                            <li style="padding-bottom: 10px;">Message: {{message}}</li>
+                        </ul>
                     </td>
                      </tr>
                      <tr>
                       <td align="center" style="padding:0;Margin:0;padding-top:20px">
-                        <!--[if mso]><a href="https://viewstripo.email" target="_blank" hidden>
-	<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" esdevVmlButton href="https://viewstripo.email" 
-                style="height:41px; v-text-anchor:middle; width:181px" arcsize="50%" stroke="f"  fillcolor="#8133f1">
-		<w:anchorlock></w:anchorlock>
-		<center style='color:#ffffff; font-family:"Josefin Sans", helvetica, arial, sans-serif; font-size:15px; font-weight:400; line-height:15px;  mso-text-raise:1px'>Explore Events</center>
-	</v:roundrect></a>
-<![endif]--><!--[if !mso]><!-- -->
-<span class="msohide es-button-border" style="border-style:solid;border-color:#2CB543;background:#8133f1;border-width:0px;display:inline-block;border-radius:30px;width:auto;mso-hide:all">
-    <a href={{verificationUrl}} class="es-button" target="_blank" style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#FFFFFF;font-size:18px;display:inline-block;background:#8133f1;border-radius:30px;font-family:'Josefin Sans', helvetica, arial, sans-serif;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center;padding:10px 20px 10px 20px;mso-padding-alt:0;mso-border-alt:10px solid #8133F1">
-        Verify Account
-    </a>
-</span>
+                        
 <!--<![endif]-->
 </td>
 </tr>
@@ -152,27 +108,6 @@ a[x-apple-data-detectors] {
            </table></td>
          </tr>
        </table>
-       <!-- <table cellpadding="0" cellspacing="0" class="es-content" align="center" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">
-         <tr>
-          <td align="center" style="padding:0;Margin:0">
-           <table bgcolor="#ffffff" class="es-content-body" align="center" cellpadding="0" cellspacing="0" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:600px">
-             <tr>
-              <td align="left" bgcolor="#222222" style="Margin:0;padding-left:20px;padding-right:20px;padding-top:30px;padding-bottom:30px;background-color:#222222">
-               <table cellpadding="0" cellspacing="0" width="100%" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                 <tr>
-                  <td align="left" style="padding:0;Margin:0;width:560px">
-                   <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                     <tr>
-                      <td align="center" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://ecqehch.stripocdn.email/content/guids/CABINET_6e6319abae3cda9440564f09b17d845e79f3612cdc02bd3c863444f15ee31c22/images/logo.png" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="122" height="97"></td>
-                     </tr>
-                   </table>
-                </td>
-                 </tr>
-               </table></td>
-             </tr>
-           </table></td>
-         </tr>
-       </table> -->
        <table cellpadding="0" cellspacing="0" class="es-content" align="center" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">
         <tr>
          <td align="center" style="padding:0;Margin:0">

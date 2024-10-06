@@ -1,6 +1,6 @@
 export type CustomerEnquiry = {
-  name: string;
+  firstName: string;
+  lastName: string;
   email: string;
-  subject: string;
   message: string;
 };

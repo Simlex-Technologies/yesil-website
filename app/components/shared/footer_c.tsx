@@ -19,19 +19,16 @@ const Footer: FunctionComponent<FooterProps> = (): ReactElement => {
                     The HR & Logistics partner your business needs to sustainably thrive.
                 </p>
                 <div className="flex flex-row items-center justify-center gap-2">
-                    <Link href="/" target="_blank" className="hover:-translate-y-1 transition-all duration-200">
+                    {/* <Link href="/" target="_blank" className="hover:-translate-y-1 transition-all duration-200">
                         <Icons.Youtube />
                     </Link>
                     <Link href="/" target="_blank" className="hover:-translate-y-1 transition-all duration-200">
                         <Icons.X />
-                    </Link>
-                    <Link href="/" target="_blank" className="hover:-translate-y-1 transition-all duration-200">
-                        <Icons.Facebook />
-                    </Link>
-                    <Link href="/" target="_blank" className="hover:-translate-y-1 transition-all duration-200">
+                    </Link> */}
+                    <Link href="https://www.instagram.com/yesilservices_/" target="_blank" className="hover:-translate-y-1 transition-all duration-200">
                         <Icons.Instagram />
                     </Link>
-                    <Link href="/" target="_blank" className="hover:-translate-y-1 transition-all duration-200">
+                    <Link href="linkedIn.com/company/104369520/admin/dashboard" target="_blank" className="hover:-translate-y-1 transition-all duration-200">
                         <Icons.LinkedIn />
                     </Link>
                 </div>
@@ -58,11 +55,23 @@ const Footer: FunctionComponent<FooterProps> = (): ReactElement => {
                             <span className="w-6 h-6 grid place-items-center">
                                 <Icons.Mail className="w-4 h-4" />
                             </span>
-                            <Link
-                                href="mailto:info@yesilservices.com"
-                                className="font-light text-sm hover:text-secondary">
-                                info@yesilservices.com
-                            </Link>
+                            <div className="flex flex-row flex-wrap max-w-[400px]">
+                                <Link
+                                    href="mailto:info@yesilservices.com"
+                                    className="font-light text-sm hover:text-secondary mr-2">
+                                    info@yesilservices.com
+                                </Link>
+                                <Link
+                                    href="mailto:logistics@yesilservices.com"
+                                    className="font-light text-sm hover:text-secondary">
+                                    logistics@yesilservices.com
+                                </Link>
+                                <Link
+                                    href="mailto:hr@yesilservices.com"
+                                    className="font-light text-sm hover:text-secondary">
+                                    hr@yesilservices.com
+                                </Link>
+                            </div>
                         </li>
                         <li className="text-white text-sm flex flex-row items-start justify-center gap-1">
                             <span className="w-6 h-6 grid place-items-center">
@@ -70,14 +79,18 @@ const Footer: FunctionComponent<FooterProps> = (): ReactElement => {
                             </span>
                             <div className="flex flex-row items-start justify-center gap-1">
                                 <Link
-                                    href="tel:+2347040256707"
+                                    href="tel:2347040256707"
                                     className="font-light text-sm hover:text-secondary">
                                     +234 704 025 6707,
                                 </Link>
-                                <Link href="tel:+2347064325371"
+                                <Link href="tel:2348063145310"
+                                    className="font-light text-sm hover:text-secondary">
+                                    +234 806 314 5310
+                                </Link>
+                                {/* <Link href="tel:+2347064325371"
                                     className="font-light text-sm hover:text-secondary">
                                     +234 706 432 5371
-                                </Link>
+                                </Link> */}
                             </div>
                         </li>
                     </ul>
