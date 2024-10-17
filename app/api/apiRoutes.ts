@@ -15,7 +15,7 @@ export class ApiRoutes {
   /**
    * The live base url for the application
    */
-  static BASE_URL_LIVE: string = "https://yesil.com";
+  static BASE_URL_LIVE: string = "https://yesilservices.com";
 
   /**
    * The route to Customer Enquiries endpoint
